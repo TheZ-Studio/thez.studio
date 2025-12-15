@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudioZ Digital Lab</title>
+    <meta name="description" content="Agence digitale experte en E-commerce, Développement Sur-Mesure et Data Science.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thez.studio/">
+    <meta property="og:title" content="StudioZ Digital Lab | Ingénierie & AI">
+    <meta property="og:description" content="Transformez vos idées en solutions digitales performantes. SaaS, E-commerce et Intelligence Artificielle.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="StudioZ Digital Lab | Ingénierie & AI">
+    <meta property="twitter:description" content="Agence digitale experte en E-commerce, Développement Sur-Mesure et Data Science.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Google Fonts: Inter (Latin) & IBM Plex Sans Arabic (Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (JIT) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'studio-bg': '#00251f',     // Deepest Dark Green (Background)
+              'studio-card': '#00382e',   // Slightly lighter for cards
+              'studio-accent': '#00e676', // Neon Mint Green (Logo Highlight)
+              'studio-text': '#e0f2f1',   // Off-white/Light Greenish Grey
+              'studio-dim': '#4db6ac',    // Dimmed accent for secondary text
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              arabic: ['IBM Plex Sans Arabic', 'sans-serif'],
+            },
+            boxShadow: {
+              'neon': '0 0 10px rgba(0, 230, 118, 0.3), 0 0 20px rgba(0, 230, 118, 0.2)',
+              'neon-strong': '0 0 15px rgba(0, 230, 118, 0.6), 0 0 30px rgba(0, 230, 118, 0.4)',
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      /* Custom scrollbar for that "Tech" feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #00251f; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #004d40; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00e676; 
+      }
+      
+      /* Subtle circuit background pattern */
+      .bg-circuit {
+        background-color: #00251f;
+        background-image: radial-gradient(#004d40 1px, transparent 1px);
+        background-size: 40px 40px;
+      }
+
+      /* RTL Support helpers */
+      [dir="rtl"] .font-sans {
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "lucide-react": "https://esm.sh/lucide-react@0.263.1",
+    "three": "https://esm.sh/three@0.160.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.15.14?external=react,react-dom,three",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.96.1?external=react,react-dom,three,@react-three/fiber",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-studio-bg text-studio-text antialiased selection:bg-studio-accent selection:text-studio-bg transition-colors duration-300">
+    <div id="root"></div>
+
+    <!-- 
+      HIDDEN NETLIFY FORM 
+      Required for Netlify's bots to detect the form fields during the build process 
+    -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <select name="service"></select>
+      <textarea name="message"></textarea>
+    </form>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
