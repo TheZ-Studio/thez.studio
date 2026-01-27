@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Stats from './components/Stats';
 import Innovation from './components/Innovation';
+import Plugins from './components/Plugins';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
@@ -16,13 +17,13 @@ const App: React.FC = () => {
   useEffect(() => {
     // SEO & Document Settings Logic
     document.title = content.meta.title;
-    
+
     // Update Meta Description
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute('content', content.meta.description);
     }
-    
+
     // Update Open Graph Description if it exists
     const ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc) {
@@ -33,7 +34,7 @@ const App: React.FC = () => {
     const dir = lang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.dir = dir;
     document.documentElement.lang = lang;
-    
+
     // Switch Font based on language
     if (lang === 'ar') {
       document.body.classList.add('font-arabic');
@@ -53,6 +54,7 @@ const App: React.FC = () => {
         <Stats content={content} />
         <Services content={content.services} />
         <Innovation content={content.innovation} />
+        <Plugins content={content.plugins} lang={lang} />
         <Contact content={content.contact} />
       </main>
       <Footer content={content.footer} />
