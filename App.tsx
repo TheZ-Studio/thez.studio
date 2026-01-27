@@ -8,14 +8,10 @@ import Plugins from './components/Plugins';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
-import PluginALVDetails from './components/PluginALVDetails';
 import { translations, Language } from './translations';
-
-export type View = 'home' | 'plugin-alv';
 
 const App: React.FC = () => {
   const [lang, setLang] = useState<Language>('fr');
-  const [view, setView] = useState<View>('home');
   const content = translations[lang];
 
   useEffect(() => {
@@ -48,27 +44,18 @@ const App: React.FC = () => {
       document.body.classList.remove('font-arabic');
     }
 
-    // Scroll to top on view change
-    window.scrollTo(0, 0);
-
-  }, [lang, content, view]);
+  }, [lang, content]);
 
   return (
     <div className={`flex flex-col min-h-screen bg-circuit overflow-x-hidden ${lang === 'ar' ? 'text-right' : 'text-left'}`}>
-      <Navbar lang={lang} setLang={setLang} setView={setView} currentView={view} content={content.nav} />
+      <Navbar lang={lang} setLang={setLang} content={content.nav} />
       <main className="flex-grow">
-        {view === 'home' ? (
-          <>
-            <Hero content={content.hero} lang={lang} />
-            <Stats content={content} />
-            <Services content={content.services} />
-            <Innovation content={content.innovation} />
-            <Plugins content={content.plugins} lang={lang} setView={setView} />
-            <Contact content={content.contact} />
-          </>
-        ) : (
-          <PluginALVDetails content={content.plugins.details} lang={lang} />
-        )}
+        <Hero content={content.hero} lang={lang} />
+        <Stats content={content} />
+        <Services content={content.services} />
+        <Innovation content={content.innovation} />
+        <Plugins content={content.plugins} lang={lang} />
+        <Contact content={content.contact} />
       </main>
       <Footer content={content.footer} />
       <WhatsAppFloat label={content.contact.whatsappFloat} />
