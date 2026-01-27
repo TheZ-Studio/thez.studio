@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Package, ExternalLink, CheckCircle2, Zap, X, Info, ShieldCheck, ChevronRight } from 'lucide-react';
+import React from 'react';
+import { Package, CheckCircle2, ChevronRight } from 'lucide-react';
+import { View } from '../App';
 
 interface PluginItem {
     id: string;
@@ -9,8 +10,6 @@ interface PluginItem {
     features: string[];
     price: string;
     cta: string;
-    longDesc: string;
-    detailedFeatures: string[];
 }
 
 interface PluginsProps {
@@ -21,25 +20,10 @@ interface PluginsProps {
         items: PluginItem[];
     };
     lang: string;
+    setView: (view: View) => void;
 }
 
-const Plugins: React.FC<PluginsProps> = ({ content, lang }) => {
-    const [selectedPlugin, setSelectedPlugin] = useState<PluginItem | null>(null);
-
-    // Lock scroll when modal is open
-    useEffect(() => {
-        if (selectedPlugin) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'unset';
-        }
-        return () => {
-            document.body.style.overflow = 'unset';
-        };
-    }, [selectedPlugin]);
-
-    const closeBtnLabel = lang === 'ar' ? 'إغلاق' : lang === 'en' ? 'Close' : 'Fermer';
-
+const Plugins: React.FC<PluginsProps> = ({ content, lang, setView }) => {
     return (
         <section id="plugins" className="relative py-24 bg-studio-bg overflow-hidden border-t border-studio-accent/10">
             {/* Background decoration */}
@@ -108,7 +92,7 @@ const Plugins: React.FC<PluginsProps> = ({ content, lang }) => {
 
                                     <div className="flex flex-wrap items-center gap-6">
                                         <button
-                                            onClick={() => setSelectedPlugin(plugin)}
+                                            onClick={() => setView('plugin-alv')}
                                             className="px-8 py-4 bg-studio-accent text-studio-bg font-bold rounded-xl hover:bg-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-studio-accent/20 flex items-center gap-2"
                                         >
                                             {plugin.cta}
@@ -121,88 +105,6 @@ const Plugins: React.FC<PluginsProps> = ({ content, lang }) => {
                     ))}
                 </div>
             </div>
-
-            {/* Modal Overlay */}
-            {selectedPlugin && (
-                <div
-                    className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-6 animate-in fade-in duration-300"
-                    style={{ backgroundColor: 'rgba(0, 0, 0, 0.85)', backdropFilter: 'blur(12px)' }}
-                    onClick={() => setSelectedPlugin(null)}
-                >
-                    <div
-                        className="relative w-full max-w-4xl max-h-[90vh] bg-studio-bg border border-white/10 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row animate-in zoom-in-95 duration-300"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        {/* Close button */}
-                        <button
-                            onClick={() => setSelectedPlugin(null)}
-                            className="absolute top-4 right-4 z-20 p-2 rounded-full bg-white/5 hover:bg-white/10 text-white/50 hover:text-white transition-all border border-white/10"
-                        >
-                            <X size={20} />
-                        </button>
-
-                        {/* Left Side: Visual & Summary */}
-                        <div className="w-full md:w-1/3 p-8 bg-gradient-to-b from-studio-card/80 to-studio-bg border-r border-white/5 flex flex-col items-center">
-                            <div className="w-32 h-32 md:w-48 md:h-48 bg-studio-card rounded-2xl border border-studio-accent/30 shadow-2xl shadow-studio-accent/10 mb-6 flex items-center justify-center overflow-hidden">
-                                <img
-                                    src="/logos/alv-logo.png"
-                                    alt={selectedPlugin.title}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                            <h3 className="text-xl font-bold text-center text-white mb-2">{selectedPlugin.title}</h3>
-                            <span className="px-3 py-1 bg-studio-accent/10 border border-studio-accent/20 text-studio-accent text-xs font-bold rounded-full mb-6">
-                                {selectedPlugin.tag}
-                            </span>
-                            <div className="w-full space-y-4">
-                                <div className="p-4 rounded-xl bg-white/5 border border-white/5">
-                                    <div className="flex items-center gap-2 text-studio-accent mb-1">
-                                        <ShieldCheck size={16} />
-                                        <span className="text-xs font-bold uppercase tracking-wider">Licence Premium</span>
-                                    </div>
-                                    <p className="text-xl font-bold text-white">{selectedPlugin.price}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Right Side: Detailed Content */}
-                        <div className="flex-1 p-8 md:p-12 overflow-y-auto">
-                            <div className="max-w-xl">
-                                <div className="flex items-center gap-2 text-studio-accent mb-4">
-                                    <Info size={18} />
-                                    <span className="text-sm font-semibold uppercase tracking-widest">À propos du plugin</span>
-                                </div>
-                                <h4 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                                    {lang === 'ar' ? 'حل هندسي متكامل' : lang === 'en' ? 'Complete Engineering Solution' : 'Solution d\'Ingénierie Complète'}
-                                </h4>
-                                <p className="text-studio-dim text-lg leading-relaxed mb-8">
-                                    {selectedPlugin.longDesc}
-                                </p>
-
-                                <div className="space-y-4">
-                                    {selectedPlugin.detailedFeatures.map((feature, idx) => (
-                                        <div key={idx} className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-studio-accent/20 transition-all group/feat">
-                                            <div className="mt-1 p-2 rounded-lg bg-studio-accent/10 text-studio-accent group-hover/feat:bg-studio-accent group-hover/feat:text-studio-bg transition-all">
-                                                <CheckCircle2 size={16} />
-                                            </div>
-                                            <p className="text-studio-text/90 leading-tight py-1">{feature}</p>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                <div className="mt-12 flex justify-end">
-                                    <button
-                                        onClick={() => setSelectedPlugin(null)}
-                                        className="px-8 py-3 rounded-xl border border-white/10 text-studio-dim hover:text-white hover:bg-white/5 transition-all"
-                                    >
-                                        {closeBtnLabel}
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )}
         </section>
     );
 };

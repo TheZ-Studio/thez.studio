@@ -69,7 +69,6 @@ export const translations = {
           features: ["Auto-Grouper par SKU", "Positionnement Flexible", "Optimisé pour 50k+ produits"],
           price: "2000 DA / licence",
           cta: "En savoir plus",
-          longDesc: "TheZ Auto-Linked Variations est une solution avancée pour WooCommerce qui transforme la façon dont vos clients découvrent vos produits. Contrairement aux variations standards, ce plugin lie des produits réels entre eux en utilisant un système de 'SKU Radicals'.",
           detailedFeatures: [
             "Groupement automatique intelligent basé sur les racines de SKU",
             "Amélioration massive du SEO : chaque variation est une page produit réelle",
@@ -77,8 +76,28 @@ export const translations = {
             "Performance optimisée : conçu pour supporter des catalogues de plus de 50 000 produits",
             "Dashboard d'administration intuitif pour gérer les liaisons globales"
           ],
-        }
-      ]
+        },
+      ],
+      details: {
+        heroTitle: "TheZ Auto-Linked Variations",
+        heroSubtitle: "Automatisez. Groupez. Connectez. Le moteur de variations basé sur les SKUs le plus avancé pour WooCommerce.",
+        featuresTitle: "Pourquoi choisir TheZ ALV ?",
+        featuresSubtitle: "Conçu par des experts pour les boutiques e-commerce à grande échelle.",
+        feature1Title: "Swatches de Variation Intelligents",
+        feature1Desc: "Affichez vos produits avec de magnifiques swatches d'images ou de texte qui convertissent réellement.",
+        feature2Title: "Intégration Transparente",
+        feature2Desc: "Liez vos produits par Catégorie, Tag ou sélection manuelle en quelques clics.",
+        feature3Title: "Ingénierie de Performance",
+        feature3Desc: "Requêtes SQL optimisées pour garantir que votre site reste ultra-rapide même avec 50k+ variations.",
+        autoGrouperTitle: "Découvrez l'Auto-Grouper",
+        autoGrouperDesc: "Ne perdez plus des heures à lier manuellement. Notre moteur intelligent scanne vos SKUs et groupe tout automatiquement.",
+        skuPatterns: "Vos modèles de SKU :",
+        skuResult: "Résultat :",
+        skuSuccess: "Groupe lié automatiquement créé !",
+        ctaTitle: "Prêt à automatiser vos variations ?",
+        ctaSubtitle: "Rejoignez le futur de l'organisation produit pour les clients TheZ Studio.",
+        ctaBtn: "Obtenir le Plugin"
+      }
     },
     contact: {
       titlePrefix: "Parlons de votre",
@@ -181,7 +200,6 @@ export const translations = {
           features: ["SKU Auto-Grouper", "Flexible Positioning", "Optimized for 50k+ products"],
           price: "2000 DA / license",
           cta: "Learn More",
-          longDesc: "TheZ Auto-Linked Variations is an advanced WooCommerce solution that transforms how customers discover your products. Unlike standard variations, this plugin links actual products together using a 'SKU Radicals' system.",
           detailedFeatures: [
             "Intelligent auto-grouping based on SKU roots",
             "Massive SEO boost: each variation is a real product page",
@@ -189,8 +207,28 @@ export const translations = {
             "High performance: built to handle catalogs with 50,000+ products",
             "Intuitive admin dashboard to manage global links"
           ],
-        }
-      ]
+        },
+      ],
+      details: {
+        heroTitle: "TheZ Auto-Linked Variations",
+        heroSubtitle: "Automate. Group. Connect. The most advanced SKU-based variation engine ever built for WooCommerce.",
+        featuresTitle: "Why Choose TheZ ALV?",
+        featuresSubtitle: "Built by experts for large-scale e-commerce stores.",
+        feature1Title: "Smart Variation Swatches",
+        feature1Desc: "Display your products with beautiful image or text swatches that actually convert visitors into buyers.",
+        feature2Title: "Seamless Integration",
+        feature2Desc: "Link products by Category, Tag, or Manual selection with just a few clicks. No complex configuration needed.",
+        feature3Title: "Performance Engineered",
+        feature3Desc: "Optimized SQL queries ensure your site stays lightning-fast even with 50k+ linked variations.",
+        autoGrouperTitle: "Meet the Auto-Grouper",
+        autoGrouperDesc: "Stop wasting hours manually linking products. Our intelligent engine scans your SKU patterns and groups everything automatically.",
+        skuPatterns: "Your SKU Patterns:",
+        skuResult: "Result:",
+        skuSuccess: "Automatically Linked Group Created!",
+        ctaTitle: "Ready to automate your WooCommerce variations?",
+        ctaSubtitle: "Join the future of product organization for TheZ Studio clients.",
+        ctaBtn: "Get the Plugin"
+      }
     },
     contact: {
       titlePrefix: "Let's Talk About Your ",
@@ -293,16 +331,35 @@ export const translations = {
           features: ["تجميع تلقائي عبر SKU", "مواقع عرض مرنة", "محسن لـ +50 ألف منتج"],
           price: "2000 DA / رخصة",
           cta: "اكتشف المزيد",
-          longDesc: "TheZ Auto-Linked Variations هو حل متقدم لـ WooCommerce يغير طريقة اكتشاف العملاء لمنتجاتك. على عكس التنوعات القياسية، يقوم هذا الملحق بربط المنتجات الحقيقية ببعضها البعض باستخدام نظام 'جذور SKU'.",
           detailedFeatures: [
             "تجميع تلقائي ذكي يعتمد على جذور SKU",
             "تعزيز هائل لـ SEO: كل تنويع هو صفحة منتج حقيقية",
-            "تجربة مستخدم سلسة: تنقل بين الألوان/الأنماط بدون إعادة تحميل ثقيلة",
+            "تجربة مستخدم سلسة: تنقل entre الألوان/الأنماط بدون إعادة تحميل ثقيلة",
             "أداء فائق: مصمم لدعم كتالوجات تزيد عن 50,000 منتج",
             "لوحة تحكم بديهية لإدارة الارتباطات العالمية"
           ],
-        }
-      ]
+        },
+      ],
+      details: {
+        heroTitle: "TheZ Auto-Linked Variations",
+        heroSubtitle: "أتمتة. تجميع. ربط. محرك التنويع الأكثر تقدمًا استنادًا إلى SKU لـ WooCommerce.",
+        featuresTitle: "لماذا تختار TheZ ALV؟",
+        featuresSubtitle: "تم بناؤه من قبل خبراء لمتاجر التجارة الإلكترونية واسعة النطاق.",
+        feature1Title: "عينات تنويع ذكية",
+        feature1Desc: "اعرض منتجاتك بعينات صور أو نصوص جميلة تحول الزوار إلى مشترين.",
+        feature2Title: "تكامل سلس",
+        feature2Desc: "اربط المنتجات حسب الفئة أو العلامة أو الاختيار اليدوي ببضع نقرات فقط.",
+        feature3Title: "هندسة الأداء",
+        feature3Desc: "استعلامات SQL محسّنة تضمن بقاء موقعك فائق السرعة حتى مع أكثر من 50 ألف تنويع مرتبط.",
+        autoGrouperTitle: "تعرف على Auto-Grouper",
+        autoGrouperDesc: "توقف عن إضاعة الساعات في الربط اليدوي. يقوم محركنا الذكي بمسح أنماط SKU الخاصة بك وتجميع كل شيء تلقائيًا.",
+        skuPatterns: "أنماط SKU الخاصة بك:",
+        skuResult: "النتيجة:",
+        skuSuccess: "تم إنشاء مجموعة مرتبطة تلقائيًا!",
+        ctaTitle: "هل أنت جاهز لأتمتة تنويعات WooCommerce الخاصة بك؟",
+        ctaSubtitle: "انضم إلى مستقبل تنظيم المنتجات لعملاء TheZ Studio.",
+        ctaBtn: "احصل على الملحق"
+      }
     },
     contact: {
       titlePrefix: "لنتحدث عن ",
