@@ -127,6 +127,17 @@ export const translations = {
           cta: "En savoir plus",
           longDesc: "Acceptez les paiements par carte CIB et Edahabia directement sur votre boutique WooCommerce en toute sécurité.",
           detailedFeatures: ["Certifié Satim", "Redirection sécurisée", "Confirmation auto de commande", "Log de transactions"]
+        },
+        {
+          id: "marketing",
+          title: "Woo Marketing Suite",
+          tag: "Growth",
+          desc: "Solution marketing ultime : Badges, recommandations IA et optimisation du tunnel de vente.",
+          features: ["Badges Dynamiques", "IA Recommendations", "Infinite Scroll"],
+          price: "18,000 DA / licence",
+          cta: "En savoir plus",
+          longDesc: "Une suite d'outils puissants conçus pour maximiser votre panier moyen et transformer vos visiteurs en clients fidèles.",
+          detailedFeatures: ["Algorithme de recommandation", "Pills de catégories", "Badges de stock urgence", "Analytics Marketing avancés"]
         }
       ]
     },
