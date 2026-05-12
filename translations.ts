@@ -55,7 +55,9 @@ export const translations = {
       title: "TheZ Studio",
       subtitle: "Laboratoire d'Innovation",
       desc: "Nous développons nos propres outils internes pour accélérer le marché. Des plugins WooCommerce haute performance aux algorithmes prédictifs, nous construisons le futur du digital.",
-      module: "TheZ Auto-L    plugins: {
+      module: "TheZ Auto-Linked Variations"
+    },
+    plugins: {
       titlePrefix: "Nos Plugins ",
       titleHighlight: "WooCommerce & E-commerce",
       subtitle: "Solutions prêtes à l'emploi pour booster votre boutique WooCommerce.",
@@ -555,46 +557,6 @@ export const translations = {
       ctaTitle: "هل أنت مستعد للبدء؟",
       ctaDesc: "أرسل لنا بريداً إلكترونياً يتضمن تفاصيل مشروعك وسيقوم فريقنا بالرد عليك خلال 24 ساعة.",
       ctaMail: "contact@thez.studio"
-    },
-    footer: {
-      copyright: "© " + new Date().getFullYear() + " StudioZ Digital Lab."
-    }
-  }
-};
- فائق: مصمم لدعم كتالوجات تزيد عن 50,000 منتج",
-            "لوحة تحكم بديهية لإدارة الارتباطات العالمية"
-          ],
-        }
-      ]
-    },
-    contact: {
-      titlePrefix: "لنتحدث عن ",
-      titleHighlight: "مشروعك",
-      desc: "هل لديك مشروع SaaS، تجارة إلكترونية أو بيانات؟ لنناقش كيف يمكن لهندستنا أن تخدم نموك.",
-      emailLabel: "البريد الإلكتروني",
-      phoneLabel: "الهاتف و واتساب",
-      locationLabel: "المقر الرئيسي",
-      location: "الجزائر العاصمة، الجزائر\nعن بعد حول العالم",
-      whatsappBtn: "دردشة عبر واتساب",
-      whatsappFloat: "تحدث معنا",
-      form: {
-        successTitle: "تم إرسال الرسالة",
-        successDesc: "مهندسونا يحللون طلبك. الرد خلال 24 ساعة.",
-        resetBtn: "إرسال رسالة أخرى",
-        name: "الاسم الكامل",
-        phone: "الهاتف",
-        email: "البريد المهني",
-        service: "الخدمة المطلوبة",
-        serviceOptions: {
-          ecommerce: "تجارة إلكترونية / SaaS",
-          software: "هندسة البرمجيات / AI",
-          data: "علوم البيانات / Analytics",
-          other: "طلب آخر"
-        },
-        message: "تفاصيل المشروع",
-        submit: "بدء التعاون",
-        submitting: "جاري الإرسال..."
-      }
     },
     footer: {
       copyright: "© " + new Date().getFullYear() + " StudioZ Digital Lab."
