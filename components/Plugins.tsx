@@ -1,5 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Package, ExternalLink, CheckCircle2, Zap, X, Info, ShieldCheck, ChevronRight } from 'lucide-react';
+import { 
+    Package, 
+    CheckCircle2, 
+    X, 
+    Info, 
+    ShieldCheck, 
+    ChevronRight, 
+    Truck, 
+    BarChart3, 
+    Zap, 
+    RefreshCcw, 
+    CreditCard,
+    ShoppingBag
+} from 'lucide-react';
 
 interface PluginItem {
     id: string;
@@ -23,10 +36,21 @@ interface PluginsProps {
     lang: string;
 }
 
+const PluginIcon = ({ id, size = 24 }: { id: string, size?: number }) => {
+    switch (id) {
+        case 'alv': return <Zap size={size} />;
+        case 'logistics': return <Truck size={size} />;
+        case 'insights': return <BarChart3 size={size} />;
+        case 'fast-checkout': return <ShoppingBag size={size} />;
+        case 'cart-recovery': return <RefreshCcw size={size} />;
+        case 'satim': return <CreditCard size={size} />;
+        default: return <Package size={size} />;
+    }
+};
+
 const Plugins: React.FC<PluginsProps> = ({ content, lang }) => {
     const [selectedPlugin, setSelectedPlugin] = useState<PluginItem | null>(null);
 
-    // Lock scroll when modal is open
     useEffect(() => {
         if (selectedPlugin) {
             document.body.style.overflow = 'hidden';
@@ -42,9 +66,9 @@ const Plugins: React.FC<PluginsProps> = ({ content, lang }) => {
 
     return (
         <section id="plugins" className="relative py-24 bg-studio-bg overflow-hidden border-t border-studio-accent/10">
-            {/* Background decoration */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-studio-accent/5 rounded-full blur-3xl -mr-48 -mt-48" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-studio-accent/5 rounded-full blur-3xl -ml-48 -mb-48" />
+            {/* Ambient Background Elements */}
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-studio-accent/5 rounded-full blur-[120px] -mr-64 -mt-64" />
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-studio-accent/5 rounded-full blur-[120px] -ml-64 -mb-64" />
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="max-w-4xl mx-auto text-center mb-20 px-4">
@@ -61,60 +85,50 @@ const Plugins: React.FC<PluginsProps> = ({ content, lang }) => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 gap-12 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                     {content.items.map((plugin) => (
                         <div
                             key={plugin.id}
-                            className="group relative bg-studio-card/40 backdrop-blur-xl border border-white/5 rounded-3xl overflow-hidden hover:border-studio-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-studio-accent/5"
+                            className="group relative bg-studio-card/30 backdrop-blur-xl border border-white/5 rounded-3xl overflow-hidden hover:border-studio-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-studio-accent/5"
                         >
-                            <div className="flex flex-col md:flex-row gap-8 p-8 md:p-12">
-                                {/* Left side: Visual representation */}
-                                <div className="w-full md:w-2/5 flex flex-col justify-center items-center bg-black/40 rounded-2xl p-4 border border-white/5 relative overflow-hidden group-hover:bg-studio-accent/5 transition-colors duration-500">
-                                    <div className="absolute inset-0 opacity-20 bg-grid-slate-900/[0.04] bg-[bottom_1px_center] [mask-image:linear-gradient(to_bottom,white,transparent)]" />
-                                    <div className="relative z-10 w-full aspect-square bg-studio-card rounded-2xl flex items-center justify-center overflow-hidden border border-studio-accent/20 shadow-lg shadow-studio-accent/10 transform transition-transform duration-700 group-hover:scale-105">
-                                        <img
-                                            src="/logos/alv-logo.png"
-                                            alt={plugin.title}
-                                            className="w-full h-full object-cover"
-                                        />
+                            <div className="p-8 md:p-10 flex flex-col h-full">
+                                <div className="flex justify-between items-start mb-8">
+                                    <div className="w-16 h-16 bg-studio-bg rounded-2xl flex items-center justify-center text-studio-accent border border-studio-accent/20 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-studio-accent/5">
+                                        <PluginIcon id={plugin.id} size={32} />
                                     </div>
-                                    <div className="mt-6 text-center">
-                                        <span className="text-xs font-bold text-studio-accent uppercase tracking-[0.2em]">{plugin.tag}</span>
-                                        <h3 className="text-2xl font-bold mt-2 leading-tight text-white">{plugin.title}</h3>
-                                    </div>
+                                    <span className="px-3 py-1 bg-studio-accent/10 border border-studio-accent/20 text-studio-accent text-[10px] font-bold rounded-full uppercase tracking-widest">
+                                        {plugin.tag}
+                                    </span>
                                 </div>
 
-                                {/* Right side: Info */}
-                                <div className="flex-1 flex flex-col justify-between">
-                                    <div>
-                                        <div className="flex items-center gap-3 mb-6">
-                                            <span className="h-px flex-1 bg-white/10" />
-                                            <span className="text-studio-accent font-mono text-sm uppercase">{plugin.price}</span>
+                                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-studio-accent transition-colors">
+                                    {plugin.title}
+                                </h3>
+                                
+                                <p className="text-studio-dim text-base mb-8 line-clamp-2">
+                                    {plugin.desc}
+                                </p>
+
+                                <div className="space-y-3 mb-10 flex-grow">
+                                    {plugin.features.map((feature, idx) => (
+                                        <div key={idx} className="flex items-center gap-3 text-studio-text/70">
+                                            <CheckCircle2 size={16} className="text-studio-accent/60" />
+                                            <span className="text-sm">{feature}</span>
                                         </div>
+                                    ))}
+                                </div>
 
-                                        <p className="text-studio-text/80 text-lg mb-8 leading-relaxed">
-                                            {plugin.desc}
-                                        </p>
-
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-                                            {plugin.features.map((feature, idx) => (
-                                                <div key={idx} className="flex items-center gap-3 text-studio-dim group/item">
-                                                    <CheckCircle2 size={18} className="text-studio-accent/70 group-hover/item:text-studio-accent transition-colors" />
-                                                    <span className="text-sm">{feature}</span>
-                                                </div>
-                                            ))}
-                                        </div>
+                                <div className="pt-6 border-t border-white/5 flex items-center justify-between">
+                                    <div className="flex flex-col">
+                                        <span className="text-[10px] text-studio-dim uppercase tracking-widest font-bold">{lang === 'ar' ? 'السعر' : 'Price'}</span>
+                                        <span className="text-lg font-bold text-white">{plugin.price}</span>
                                     </div>
-
-                                    <div className="flex flex-wrap items-center gap-6">
-                                        <button
-                                            onClick={() => setSelectedPlugin(plugin)}
-                                            className="px-8 py-4 bg-studio-accent text-studio-bg font-bold rounded-xl hover:bg-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-studio-accent/20 flex items-center gap-2"
-                                        >
-                                            {plugin.cta}
-                                            <ChevronRight size={18} />
-                                        </button>
-                                    </div>
+                                    <button
+                                        onClick={() => setSelectedPlugin(plugin)}
+                                        className="p-3 bg-studio-accent text-studio-bg rounded-xl hover:bg-white transition-all duration-300"
+                                    >
+                                        <ChevronRight size={20} className="rtl:rotate-180" />
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -143,12 +157,8 @@ const Plugins: React.FC<PluginsProps> = ({ content, lang }) => {
 
                         {/* Left Side: Visual & Summary */}
                         <div className="w-full md:w-1/3 p-8 bg-gradient-to-b from-studio-card/80 to-studio-bg border-r border-white/5 flex flex-col items-center">
-                            <div className="w-32 h-32 md:w-48 md:h-48 bg-studio-card rounded-2xl border border-studio-accent/30 shadow-2xl shadow-studio-accent/10 mb-6 flex items-center justify-center overflow-hidden">
-                                <img
-                                    src="/logos/alv-logo.png"
-                                    alt={selectedPlugin.title}
-                                    className="w-full h-full object-cover"
-                                />
+                            <div className="w-32 h-32 md:w-48 md:h-48 bg-studio-card rounded-2xl border border-studio-accent/30 shadow-2xl shadow-studio-accent/10 mb-6 flex items-center justify-center text-studio-accent">
+                                <PluginIcon id={selectedPlugin.id} size={64} />
                             </div>
                             <h3 className="text-xl font-bold text-center text-white mb-2">{selectedPlugin.title}</h3>
                             <span className="px-3 py-1 bg-studio-accent/10 border border-studio-accent/20 text-studio-accent text-xs font-bold rounded-full mb-6">

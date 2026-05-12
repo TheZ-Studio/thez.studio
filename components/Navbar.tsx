@@ -23,6 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang, content }) => {
 
   const navLinks = [
     { name: content.expertise, href: '#services' },
+    { name: content.packages, href: '#packages' },
     { name: content.lab, href: '#innovation' },
     { name: content.plugins, href: '#plugins' },
     { name: content.contact, href: '#contact' },

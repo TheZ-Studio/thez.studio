@@ -8,6 +8,7 @@ export const translations = {
     },
     nav: {
       expertise: "Expertise",
+      packages: "Offres",
       lab: "Lab",
       plugins: "Plugins",
       contact: "Contact",
@@ -54,29 +55,116 @@ export const translations = {
       title: "TheZ Studio",
       subtitle: "Laboratoire d'Innovation",
       desc: "Nous développons nos propres outils internes pour accélérer le marché. Des plugins WooCommerce haute performance aux algorithmes prédictifs, nous construisons le futur du digital.",
-      module: "TheZ Auto-Linked Variations"
-    },
-    plugins: {
+      module: "TheZ Auto-L    plugins: {
       titlePrefix: "Nos Plugins ",
-      titleHighlight: "Premium",
+      titleHighlight: "WooCommerce & E-commerce",
       subtitle: "Solutions prêtes à l'emploi pour booster votre boutique WooCommerce.",
       items: [
         {
           id: "alv",
           title: "TheZ Auto-Linked Variations",
-          tag: "Nouveau",
-          desc: "Augmentez vos conversions en liant intelligemment vos produits. Moteur de groupement automatique basé sur les SKUs pour une gestion sans effort.",
-          features: ["Auto-Grouper par SKU", "Positionnement Flexible", "Optimisé pour 50k+ produits"],
-          price: "2000 DA / licence",
+          tag: "Populaire",
+          desc: "Augmentez vos conversions en liant intelligemment vos produits par SKU.",
+          features: ["Auto-Grouper par SKU", "SEO Optimisé", "Haute Performance"],
+          price: "2,000 DA / licence",
           cta: "En savoir plus",
-          longDesc: "TheZ Auto-Linked Variations est une solution avancée pour WooCommerce qui transforme la façon dont vos clients découvrent vos produits. Contrairement aux variations standards, ce plugin lie des produits réels entre eux en utilisant un système de 'SKU Radicals'.",
-          detailedFeatures: [
-            "Groupement automatique intelligent basé sur les racines de SKU",
-            "Amélioration massive du SEO : chaque variation est une page produit réelle",
-            "Expérience utilisateur fluide : navigation entre couleurs/styles sans rechargement lourd",
-            "Performance optimisée : conçu pour supporter des catalogues de plus de 50 000 produits",
-            "Dashboard d'administration intuitif pour gérer les liaisons globales"
-          ],
+          longDesc: "Solution avancée pour WooCommerce qui transforme la façon dont vos clients découvrent vos produits en liant des produits réels entre eux via SKU.",
+          detailedFeatures: ["Groupement intelligent", "Amélioration SEO massive", "Navigation fluide", "Support 50k+ produits"]
+        },
+        {
+          id: "logistics",
+          title: "WooCommerce Logistics Hub",
+          tag: "Premium",
+          desc: "Hub logistique complet intégrant Yalidine, Mylerz et plus.",
+          features: ["Multi-transporteurs", "Suivi Automatique", "Gestion des Échanges"],
+          price: "8,000 DA / licence",
+          cta: "En savoir plus",
+          longDesc: "Transformez votre boutique en centre de commandement logistique. Automatisez l'expédition, le suivi et les retours avec les transporteurs locaux.",
+          detailedFeatures: ["Intégration Yalidine/Mylerz", "Webhook de suivi en temps réel", "Portail de suivi client", "Système d'échange intégré"]
+        },
+        {
+          id: "insights",
+          title: "Customer Insights 360",
+          tag: "Data",
+          desc: "CRM interne pour WooCommerce avec analyse de fiabilité client.",
+          features: ["KPIs Client 360", "Score de Fiabilité", "Analyse LTV"],
+          price: "5,000 DA / licence",
+          cta: "En savoir plus",
+          longDesc: "Identifiez vos meilleurs clients et évitez les retours abusifs grâce à une vue à 360° basée sur le numéro de téléphone.",
+          detailedFeatures: ["Calcul automatique du LTV", "Taux de retour par client", "Dashboard analytics", "Historique multi-commandes"]
+        },
+        {
+          id: "fast-checkout",
+          title: "COD Fast Checkout Algeria",
+          tag: "Conversion",
+          desc: "Formulaire de commande rapide optimisé pour le marché algérien.",
+          features: ["Checkout One-Page", "Géo-localisation DZ", "Calcul Frais Dynamique"],
+          price: "4,000 DA / licence",
+          cta: "En savoir plus",
+          longDesc: "Augmentez votre taux de conversion avec un formulaire ultra-rapide incluant toutes les Wilayas et Communes d'Algérie.",
+          detailedFeatures: ["Wilayas/Communes pré-chargées", "Frais de port par zone", "Design mobile-first", "Validation de téléphone"]
+        },
+        {
+          id: "cart-recovery",
+          title: "Dz Cart Recovery",
+          tag: "Marketing",
+          desc: "Récupérez vos ventes perdues via WhatsApp et Email.",
+          features: ["Capture de Leads", "Relance WhatsApp", "Coupons Dynamiques"],
+          price: "4,500 DA / licence",
+          cta: "En savoir plus",
+          longDesc: "Capturez les intentions d'achat avant l'abandon et relancez vos clients automatiquement avec des offres personnalisées.",
+          detailedFeatures: ["Dashboard de récupération", "Export Meta Ads (CSV)", "Générateur de coupons VIP", "Stats de conversion"]
+        },
+        {
+          id: "satim",
+          title: "Satim CIB Gateway",
+          tag: "Paiement",
+          desc: "Intégration officielle des paiements CIB et Edahabia.",
+          features: ["Paiement Sécurisé", "Cartes Nationales", "Reçus PDF"],
+          price: "12,000 DA / licence",
+          cta: "En savoir plus",
+          longDesc: "Acceptez les paiements par carte CIB et Edahabia directement sur votre boutique WooCommerce en toute sécurité.",
+          detailedFeatures: ["Certifié Satim", "Redirection sécurisée", "Confirmation auto de commande", "Log de transactions"]
+        }
+      ]
+    },
+    packages: {
+      titlePrefix: "Nos Offres d'",
+      titleHighlight: "Accompagnement",
+      subtitle: "Des solutions complètes pour lancer et propulser votre business digital.",
+      items: [
+        {
+          id: "pkg-ecommerce",
+          title: "Création Boutique E-commerce",
+          tag: "Complet",
+          desc: "Solution clé en main pour vendre en Algérie et à l'international.",
+          features: ["Design Custom", "Paiement & Livraison", "Formation Admin"],
+          price: "dès 60,000 DA",
+          cta: "Démarrer",
+          longDesc: "Nous concevons votre boutique WooCommerce optimisée pour la conversion, incluant tous nos plugins premium et une configuration logistique totale.",
+          detailedFeatures: ["Architecture scalable", "Optimisation SEO", "Sécurisation totale", "Support technique 12 mois"]
+        },
+        {
+          id: "pkg-vitrine",
+          title: "Site Vitrine Professionnel",
+          tag: "Corporate",
+          desc: "Établissez votre présence en ligne avec un site élégant et performant.",
+          features: ["Multi-pages", "SEO Local", "Contact & Devis"],
+          price: "dès 35,000 DA",
+          cta: "Démarrer",
+          longDesc: "Un site vitrine moderne pour présenter vos services et capter de nouveaux prospects avec une image de marque forte.",
+          detailedFeatures: ["Design Responsive", "Intégration Google Maps", "Blog/Actualités", "Vitesse de chargement optimale"]
+        },
+        {
+          id: "pkg-custom",
+          title: "Solutions Logiciels & IA",
+          tag: "Sur Mesure",
+          desc: "Développement spécifique pour vos besoins métiers complexes.",
+          features: ["SaaS / Dashboard", "Automatisation IA", "API Intégration"],
+          price: "Sur Devis",
+          cta: "Discuter",
+          longDesc: "Besoin d'un outil métier unique ? Nous développons vos plateformes SaaS et intégrons l'intelligence artificielle pour automatiser vos processus.",
+          detailedFeatures: ["Analyse fonctionnelle", "Stack moderne (React/Node)", "Intelligence Artificielle", "Maintenance évolutive"]
         }
       ]
     },
@@ -90,24 +178,9 @@ export const translations = {
       location: "Alger, Algérie\nRemote Worldwide",
       whatsappBtn: "Discuter sur WhatsApp",
       whatsappFloat: "Discuter avec nous",
-      form: {
-        successTitle: "Message Transmis",
-        successDesc: "Nos ingénieurs analysent votre demande. Réponse sous 24h.",
-        resetBtn: "Envoyer un autre message",
-        name: "Nom complet",
-        phone: "Téléphone",
-        email: "Email professionnel",
-        service: "Service concerné",
-        serviceOptions: {
-          ecommerce: "E-commerce / SaaS",
-          software: "Software Engineering / AI",
-          data: "Data Science / Analytics",
-          other: "Autre demande"
-        },
-        message: "Détails du projet",
-        submit: "Initialiser la collaboration",
-        submitting: "Transmission..."
-      }
+      ctaTitle: "Prêt à démarrer ?",
+      ctaDesc: "Envoyez-nous un email détaillant vos besoins et nous reviendrons vers vous sous 24 heures.",
+      ctaMail: "contact@thez.studio"
     },
     footer: {
       copyright: "© " + new Date().getFullYear() + " StudioZ Digital Lab."
@@ -120,6 +193,7 @@ export const translations = {
     },
     nav: {
       expertise: "Expertise",
+      packages: "Packages",
       lab: "Lab",
       plugins: "Plugins",
       contact: "Contact",
@@ -169,26 +243,115 @@ export const translations = {
       module: "TheZ Auto-Linked Variations"
     },
     plugins: {
-      titlePrefix: "Our Premium ",
-      titleHighlight: "Plugins",
+      titlePrefix: "Our ",
+      titleHighlight: "WooCommerce & E-commerce Plugins",
       subtitle: "Off-the-shelf solutions to supercharge your WooCommerce store.",
       items: [
         {
           id: "alv",
           title: "TheZ Auto-Linked Variations",
-          tag: "New",
-          desc: "Boost your conversions by intelligently linking your products. Automatic SKU-based grouping engine for effortless management.",
-          features: ["SKU Auto-Grouper", "Flexible Positioning", "Optimized for 50k+ products"],
-          price: "2000 DA / license",
+          tag: "Popular",
+          desc: "Boost conversions by intelligently linking products via SKU.",
+          features: ["SKU Auto-Grouper", "SEO Optimized", "High Performance"],
+          price: "2,000 DA / license",
           cta: "Learn More",
-          longDesc: "TheZ Auto-Linked Variations is an advanced WooCommerce solution that transforms how customers discover your products. Unlike standard variations, this plugin links actual products together using a 'SKU Radicals' system.",
-          detailedFeatures: [
-            "Intelligent auto-grouping based on SKU roots",
-            "Massive SEO boost: each variation is a real product page",
-            "Seamless UX: navigate between colors/styles without heavy reloading",
-            "High performance: built to handle catalogs with 50,000+ products",
-            "Intuitive admin dashboard to manage global links"
-          ],
+          longDesc: "Advanced WooCommerce solution that transforms product discovery by linking real products via SKU radicals.",
+          detailedFeatures: ["Intelligent grouping", "Massive SEO boost", "Seamless UX", "50k+ products support"]
+        },
+        {
+          id: "logistics",
+          title: "WooCommerce Logistics Hub",
+          tag: "Premium",
+          desc: "Complete logistics hub integrating local carriers.",
+          features: ["Multi-carrier", "Auto-Tracking", "Exchange Management"],
+          price: "8,000 DA / license",
+          cta: "Learn More",
+          longDesc: "Transform your store into a logistics command center. Automate shipping and tracking with local carriers like Yalidine.",
+          detailedFeatures: ["Yalidine/Mylerz Integration", "Real-time Webhooks", "Customer Tracking Portal", "Integrated Exchange System"]
+        },
+        {
+          id: "insights",
+          title: "Customer Insights 360",
+          tag: "Data",
+          desc: "Internal CRM for WooCommerce with customer reliability analysis.",
+          features: ["360 KPIs", "Reliability Score", "LTV Analysis"],
+          price: "5,000 DA / license",
+          cta: "Learn More",
+          longDesc: "Identify best customers and avoid bad returns with a 360 view based on phone number.",
+          detailedFeatures: ["Automatic LTV calculation", "Return rates per customer", "Analytics dashboard", "Multi-order history"]
+        },
+        {
+          id: "fast-checkout",
+          title: "COD Fast Checkout Algeria",
+          tag: "Conversion",
+          desc: "Quick checkout form optimized for the Algerian market.",
+          features: ["One-Page Checkout", "DZ Géo-localization", "Dynamic Shipping"],
+          price: "4,000 DA / license",
+          cta: "Learn More",
+          longDesc: "Boost conversion rates with an ultra-fast form including all Algerian Wilayas and Communes.",
+          detailedFeatures: ["Pre-loaded Wilayas/Communes", "Zone-based shipping", "Mobile-first design", "Phone validation"]
+        },
+        {
+          id: "cart-recovery",
+          title: "Dz Cart Recovery",
+          tag: "Marketing",
+          desc: "Recover lost sales via WhatsApp and Email.",
+          features: ["Lead Capture", "WhatsApp Recovery", "Dynamic Coupons"],
+          price: "4,500 DA / license",
+          cta: "Learn More",
+          longDesc: "Capture purchase intent before abandonment and re-engage customers automatically.",
+          detailedFeatures: ["Recovery dashboard", "Meta Ads Export (CSV)", "VIP Coupon Generator", "Conversion stats"]
+        },
+        {
+          id: "satim",
+          title: "Satim CIB Gateway",
+          tag: "Payment",
+          desc: "Official CIB and Edahabia payment integration.",
+          features: ["Secure Payment", "National Cards", "PDF Receipts"],
+          price: "12,000 DA / license",
+          cta: "Learn More",
+          longDesc: "Accept CIB and Edahabia card payments directly on your store securely.",
+          detailedFeatures: ["Satim Certified", "Secure redirection", "Auto order confirmation", "Transaction logs"]
+        }
+      ]
+    },
+    packages: {
+      titlePrefix: "Our Service ",
+      titleHighlight: "Packages",
+      subtitle: "Complete solutions to launch and scale your digital business.",
+      items: [
+        {
+          id: "pkg-ecommerce",
+          title: "E-commerce Store Creation",
+          tag: "Full",
+          desc: "Turnkey solution to sell locally and internationally.",
+          features: ["Custom Design", "Payment & Shipping", "Admin Training"],
+          price: "from 60,000 DA",
+          cta: "Start Now",
+          longDesc: "We design your WooCommerce store optimized for conversion, including all our premium plugins.",
+          detailedFeatures: ["Scalable architecture", "SEO Optimization", "Full Security", "12 months support"]
+        },
+        {
+          id: "pkg-vitrine",
+          title: "Professional Showcase Site",
+          tag: "Corporate",
+          desc: "Establish your online presence with a performance site.",
+          features: ["Multi-page", "Local SEO", "Contact & Quote"],
+          price: "from 35,000 DA",
+          cta: "Start Now",
+          longDesc: "A modern showcase site to present your services and capture new leads with a strong brand image.",
+          detailedFeatures: ["Responsive Design", "Google Maps Integration", "Blog/News", "Optimal load speed"]
+        },
+        {
+          id: "pkg-custom",
+          title: "Software & AI Solutions",
+          tag: "Custom",
+          desc: "Specific development for complex business needs.",
+          features: ["SaaS / Dashboard", "AI Automation", "API Integration"],
+          price: "On Quote",
+          cta: "Discuss",
+          longDesc: "Need a unique business tool? We develop your SaaS platforms and integrate AI to automate processes.",
+          detailedFeatures: ["Functional analysis", "Modern Stack", "Artificial Intelligence", "Evolutionary maintenance"]
         }
       ]
     },
@@ -202,24 +365,9 @@ export const translations = {
       location: "Algiers, Algeria\nRemote Worldwide",
       whatsappBtn: "Chat on WhatsApp",
       whatsappFloat: "Chat with us",
-      form: {
-        successTitle: "Message Sent",
-        successDesc: "Our engineers are analyzing your request. Response within 24h.",
-        resetBtn: "Send another message",
-        name: "Full Name",
-        phone: "Phone",
-        email: "Work Email",
-        service: "Service Needed",
-        serviceOptions: {
-          ecommerce: "E-commerce / SaaS",
-          software: "Software Engineering / AI",
-          data: "Data Science / Analytics",
-          other: "Other Request"
-        },
-        message: "Project Details",
-        submit: "Initialize Collaboration",
-        submitting: "Transmitting..."
-      }
+      ctaTitle: "Ready to Start?",
+      ctaDesc: "Send us an email with your project details and our team will get back to you within 24 hours.",
+      ctaMail: "contact@thez.studio"
     },
     footer: {
       copyright: "© " + new Date().getFullYear() + " StudioZ Digital Lab."
@@ -232,8 +380,9 @@ export const translations = {
     },
     nav: {
       expertise: "الخدمات",
+      packages: "الباقات",
       lab: "المختبر",
-      plugins: "Plugins",
+      plugins: "الإضافات",
       contact: "اتصل بنا",
       cta: "ابدأ مشروعك"
     },
@@ -281,24 +430,138 @@ export const translations = {
       module: "TheZ Auto-Linked Variations"
     },
     plugins: {
-      titlePrefix: "إضافاتنا ",
-      titleHighlight: "المميزة",
-      subtitle: "حلول جاهزة لتعزيز متجرك على WooCommerce.",
+      titlePrefix: "إضافات ",
+      titleHighlight: "ووكومرس، التجارة الإلكترونية",
+      subtitle: "حلول برمجية متقدمة لتعزيز متجرك على WooCommerce وتطوير تجارتك.",
       items: [
         {
           id: "alv",
           title: "TheZ Auto-Linked Variations",
-          tag: "جديد",
-          desc: "ارفع معدلات التحويل من خلال ربط منتجاتك بذكاء. محرك تجميع تلقائي يعتمد على SKU لإدارة سهلة.",
-          features: ["تجميع تلقائي عبر SKU", "مواقع عرض مرنة", "محسن لـ +50 ألف منتج"],
+          tag: "الأكثر مبيعاً",
+          desc: "ارفع معدلات التحويل من خلال ربط منتجاتك بذكاء عبر SKU.",
+          features: ["تجميع تلقائي عبر SKU", "تحسين SEO", "أداء فائق"],
           price: "2000 DA / رخصة",
           cta: "اكتشف المزيد",
-          longDesc: "TheZ Auto-Linked Variations هو حل متقدم لـ WooCommerce يغير طريقة اكتشاف العملاء لمنتجاتك. على عكس التنوعات القياسية، يقوم هذا الملحق بربط المنتجات الحقيقية ببعضها البعض باستخدام نظام 'جذور SKU'.",
-          detailedFeatures: [
-            "تجميع تلقائي ذكي يعتمد على جذور SKU",
-            "تعزيز هائل لـ SEO: كل تنويع هو صفحة منتج حقيقية",
-            "تجربة مستخدم سلسة: تنقل بين الألوان/الأنماط بدون إعادة تحميل ثقيلة",
-            "أداء فائق: مصمم لدعم كتالوجات تزيد عن 50,000 منتج",
+          longDesc: "حل متقدم لـ WooCommerce يغير طريقة اكتشاف العملاء لمنتجاتك من خلال ربط المنتجات الحقيقية ببعضها البعض.",
+          detailedFeatures: ["تجميع تلقائي ذكي", "تعزيز هائل لـ SEO", "تجربة مستخدم سلسة", "دعم +50 ألف منتج"]
+        },
+        {
+          id: "logistics",
+          title: "WooCommerce Logistics Hub",
+          tag: "احترافي",
+          desc: "مركز لوجستي متكامل يربط متجرك بشركات الشحن (Yalidine, Mylerz).",
+          features: ["ربط شركات الشحن", "تتبع تلقائي", "إدارة التبديل"],
+          price: "8000 DA / رخصة",
+          cta: "اكتشف المزيد",
+          longDesc: "حول متجرك إلى مركز تحكم لوجستي. أتمتة الشحن والتتبع والتبديل مع شركات التوصيل المحلية.",
+          detailedFeatures: ["دمج Yalidine / Mylerz", "تحديث تلقائي عبر Webhooks", "صفحة تتبع للعملاء", "نظام متطور لإدارة التبديل"]
+        },
+        {
+          id: "insights",
+          title: "Customer Insights 360",
+          tag: "بيانات",
+          desc: "نظام CRM داخلي لتحليل سلوك العملاء وقياس مصداقيتهم.",
+          features: ["رؤية 360 للعميل", "مؤشر المصداقية", "تحليل القيمة LTV"],
+          price: "5000 DA / رخصة",
+          cta: "اكتشف المزيد",
+          longDesc: "تعرف على أفضل عملائك وتجنب المرتجعات الوهمية من خلال تحليل شامل يعتمد على رقم الهاتف.",
+          detailedFeatures: ["حساب آلي لقيمة العميل LTV", "معدل المرتجعات لكل عميل", "لوحة تحكم إحصائية", "سجل الطلبات المتعددة"]
+        },
+        {
+          id: "fast-checkout",
+          title: "COD Fast Checkout Algeria",
+          tag: "تحويل",
+          desc: "نموذج طلب سريع في صفحة واحدة مصمم خصيصاً للسوق الجزائري.",
+          features: ["طلب في خطوة واحدة", "توزيع جيو-إداري DZ", "حساب شحن ديناميكي"],
+          price: "4000 DA / رخصة",
+          cta: "اكتشف المزيد",
+          longDesc: "ارفع مبيعاتك بنسبة 30% من خلال نموذج طلب فائق السرعة يشمل جميع ولايات وبلديات الجزائر.",
+          detailedFeatures: ["قائمة الولايات والبلديات جاهزة", "تعديل أسعار الشحن حسب المناطق", "تصميم متوافق مع الموبايل", "التحقق من صحة أرقام الهاتف"]
+        },
+        {
+          id: "cart-recovery",
+          title: "Dz Cart Recovery",
+          tag: "تسويق",
+          desc: "استرجع مبيعاتك الضائعة من خلال إعادة استهداف العملاء عبر واتساب.",
+          features: ["التقاط بيانات العميل", "إعادة استهداف WhatsApp", "كوبونات خصم آلية"],
+          price: "4500 DA / رخصة",
+          cta: "اكتشف المزيد",
+          longDesc: "التقط بيانات العميل قبل الخروج من الموقع وقم بإعادة استهدافه آلياً بعروض مخصصة.",
+          detailedFeatures: ["لوحة تحكم للمبيعات الضائعة", "تصدير لجمهور Meta Ads", "مولد كوبونات VIP", "إحصائيات التحويل"]
+        },
+        {
+          id: "satim",
+          title: "Satim CIB Gateway",
+          tag: "دفع إلكتروني",
+          desc: "الربط الرسمي للدفع عبر البطاقة البنكية CIB والذهبية.",
+          features: ["دفع آمن ومباشر", "البطاقات الوطنية", "وصولات PDF آلياً"],
+          price: "12,000 DA / رخصة",
+          cta: "اكتشف المزيد",
+          longDesc: "اقبل المدفوعات عبر بطاقة CIB والذهبية مباشرة في متجرك وبكل أمان.",
+          detailedFeatures: ["معتمد من Satim", "توجيه آمن ومشفر", "تأكيد آلي للطلبات المدفوعة", "سجل كامل للعمليات"]
+        }
+      ]
+    },
+    packages: {
+      titlePrefix: "باقات ",
+      titleHighlight: "إنشاء المتاجر والحلول",
+      subtitle: "حلول متكاملة لإطلاق وتطوير مشروعك الرقمي باحترافية عالية.",
+      items: [
+        {
+          id: "pkg-ecommerce",
+          title: "إنشاء متاجر إلكترونية ووكومرس",
+          tag: "متكامل",
+          desc: "تصميم وتطوير متاجر إلكترونية احترافية متكاملة مع حلول الدفع والشحن المحلية.",
+          features: ["تصميم مخصص", "ربط الدفع والشحن", "تدريب على الإدارة"],
+          price: "ابتداءً من 60,000 دج",
+          cta: "ابدأ الآن",
+          longDesc: "نصمم لك متجراً إلكترونياً متكاملاً مبنياً على WooCommerce، يتضمن جميع إضافاتنا البرمجية المتميزة لضمان أقصى أداء.",
+          detailedFeatures: ["بنية تقنية قابلة للتوسع", "تحسين محركات البحث SEO", "تأمين وحماية شاملة", "دعم فني لمدة 12 شهر"]
+        },
+        {
+          id: "pkg-vitrine",
+          title: "إنشاء متاجر خاصة Vitrine",
+          tag: "هوية",
+          desc: "هوية رقمية قوية لشركتك من خلال متجر عرض احترافي يعكس خدماتك بجودة عالية.",
+          features: ["متعدد الصفحات", "SEO محلي", "تواصل وطلبات"],
+          price: "ابتداءً من 35,000 دج",
+          cta: "ابدأ الآن",
+          longDesc: "موقع عرض حديث يعرض خدماتك ومنتجاتك بجاذبية عالية، مصمم لجذب العملاء وبناء الثقة في علامتك التجارية.",
+          detailedFeatures: ["تصميم متجاوب بالكامل", "ربط مع خرائط جوجل", "مدونة / أخبار الشركة", "سرعة تحميل فائقة"]
+        },
+        {
+          id: "pkg-custom",
+          title: "حلول برمجية حسب الطلب",
+          tag: "برمجة خاصة",
+          desc: "تطوير برمجيات مخصصة، أنظمة SaaS، ودمج الذكاء الاصطناعي لتطوير عملك.",
+          features: ["أنظمة SaaS", "أتمتة بالذكاء الاصطناعي", "ربط API مخصص"],
+          price: "حسب الطلب",
+          cta: "تواصل معنا",
+          longDesc: "هل لديك احتياج برمجي فريد؟ نقوم بتطوير منصاتك الرقمية ودمج تقنيات الذكاء الاصطناعي لأتمتة عملياتك.",
+          detailedFeatures: ["تحليل وظيفي دقيق", "بناء بأحدث التقنيات", "ذكاء اصطناعي مدمج", "صيانة وتطوير مستمر"]
+        }
+      ]
+    },
+    contact: {
+      titlePrefix: "لنتحدث عن ",
+      titleHighlight: "مشروعك",
+      desc: "هل لديك مشروع SaaS، تجارة إلكترونية أو بيانات؟ لنناقش كيف يمكن لهندستنا أن تخدم نموك.",
+      emailLabel: "البريد الإلكتروني",
+      phoneLabel: "الهاتف و واتساب",
+      locationLabel: "المقر الرئيسي",
+      location: "الجزائر العاصمة، الجزائر\nعن بعد حول العالم",
+      whatsappBtn: "دردشة عبر واتساب",
+      whatsappFloat: "تحدث معنا",
+      ctaTitle: "هل أنت مستعد للبدء؟",
+      ctaDesc: "أرسل لنا بريداً إلكترونياً يتضمن تفاصيل مشروعك وسيقوم فريقنا بالرد عليك خلال 24 ساعة.",
+      ctaMail: "contact@thez.studio"
+    },
+    footer: {
+      copyright: "© " + new Date().getFullYear() + " StudioZ Digital Lab."
+    }
+  }
+};
+ فائق: مصمم لدعم كتالوجات تزيد عن 50,000 منتج",
             "لوحة تحكم بديهية لإدارة الارتباطات العالمية"
           ],
         }
