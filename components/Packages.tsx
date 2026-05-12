@@ -89,10 +89,13 @@ const Packages: React.FC<PackagesProps> = ({ content, lang }) => {
                                         <span className="text-2xl font-bold text-white">{pkg.price}</span>
                                     </div>
 
-                                    <button className={`w-full py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all duration-300 ${idx === 0 ? 'bg-studio-accent text-studio-bg hover:bg-white' : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'}`}>
+                                    <a 
+                                        href="#contact"
+                                        className={`w-full py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all duration-300 ${idx === 0 ? 'bg-studio-accent text-studio-bg hover:bg-white' : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'}`}
+                                    >
                                         {pkg.cta}
                                         <ChevronRight size={18} />
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

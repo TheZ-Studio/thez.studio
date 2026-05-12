@@ -85,15 +85,15 @@ export const translations = {
           detailedFeatures: ["Intégration Yalidine/Mylerz", "Webhook de suivi en temps réel", "Portail de suivi client", "Système d'échange intégré"]
         },
         {
-          id: "insights",
-          title: "Customer Insights 360",
-          tag: "Data",
-          desc: "CRM interne pour WooCommerce avec analyse de fiabilité client.",
-          features: ["KPIs Client 360", "Score de Fiabilité", "Analyse LTV"],
-          price: "5,000 DA / licence",
+          id: "sheet",
+          title: "WooCommerce Sheet Sync",
+          tag: "Productivité",
+          desc: "Synchronisez vos commandes avec Google Sheets en temps réel pour une gestion simplifiée.",
+          features: ["Sync Temps Réel", "Export Auto", "Gestion Stocks"],
+          price: "6,000 DA / licence",
           cta: "En savoir plus",
-          longDesc: "Identifiez vos meilleurs clients et évitez les retours abusifs grâce à une vue à 360° basée sur le numéro de téléphone.",
-          detailedFeatures: ["Calcul automatique du LTV", "Taux de retour par client", "Dashboard analytics", "Historique multi-commandes"]
+          longDesc: "Connectez votre boutique à Google Sheets. Chaque nouvelle commande est automatiquement ajoutée à votre feuille de calcul pour un suivi sans faille.",
+          detailedFeatures: ["Mise à jour bidirectionnelle", "Champs personnalisables", "Zéro latence", "Backup automatique"]
         },
         {
           id: "fast-checkout",
@@ -272,15 +272,15 @@ export const translations = {
           detailedFeatures: ["Yalidine/Mylerz Integration", "Real-time Webhooks", "Customer Tracking Portal", "Integrated Exchange System"]
         },
         {
-          id: "insights",
-          title: "Customer Insights 360",
-          tag: "Data",
-          desc: "Internal CRM for WooCommerce with customer reliability analysis.",
-          features: ["360 KPIs", "Reliability Score", "LTV Analysis"],
-          price: "5,000 DA / license",
+          id: "sheet",
+          title: "WooCommerce Sheet Sync",
+          tag: "Productivity",
+          desc: "Sync your orders with Google Sheets in real-time for simplified management.",
+          features: ["Real-time Sync", "Auto Export", "Stock Management"],
+          price: "6,000 DA / license",
           cta: "Learn More",
-          longDesc: "Identify best customers and avoid bad returns with a 360 view based on phone number.",
-          detailedFeatures: ["Automatic LTV calculation", "Return rates per customer", "Analytics dashboard", "Multi-order history"]
+          longDesc: "Connect your store to Google Sheets. Every new order is automatically added to your spreadsheet for seamless tracking.",
+          detailedFeatures: ["Bidirectional update", "Customizable fields", "Zero latency", "Automatic backup"]
         },
         {
           id: "fast-checkout",
@@ -314,6 +314,17 @@ export const translations = {
           cta: "Learn More",
           longDesc: "Accept CIB and Edahabia card payments directly on your store securely.",
           detailedFeatures: ["Satim Certified", "Secure redirection", "Auto order confirmation", "Transaction logs"]
+        },
+        {
+          id: "marketing",
+          title: "Woo Marketing Suite",
+          tag: "Growth",
+          desc: "Ultimate marketing solution: Badges, AI recommendations, and funnel optimization.",
+          features: ["Dynamic Badges", "AI Recommendations", "Infinite Scroll"],
+          price: "18,000 DA / license",
+          cta: "Learn More",
+          longDesc: "A suite of powerful tools designed to maximize your average order value and turn visitors into loyal customers.",
+          detailedFeatures: ["Recommendation algorithm", "Category pills", "Urgency stock badges", "Advanced Marketing analytics"]
         }
       ]
     },
@@ -459,15 +470,15 @@ export const translations = {
           detailedFeatures: ["دمج Yalidine / Mylerz", "تحديث تلقائي عبر Webhooks", "صفحة تتبع للعملاء", "نظام متطور لإدارة التبديل"]
         },
         {
-          id: "insights",
-          title: "Customer Insights 360",
-          tag: "بيانات",
-          desc: "نظام CRM داخلي لتحليل سلوك العملاء وقياس مصداقيتهم.",
-          features: ["رؤية 360 للعميل", "مؤشر المصداقية", "تحليل القيمة LTV"],
-          price: "5000 DA / رخصة",
+          id: "sheet",
+          title: "WooCommerce Sheet Sync",
+          tag: "إنتاجية",
+          desc: "مزامنة طلباتك مع Google Sheets لحظياً لتسهيل الإدارة والمتابعة.",
+          features: ["مزامنة فورية", "تصدير آلي", "إدارة المخزون"],
+          price: "6000 DA / رخصة",
           cta: "اكتشف المزيد",
-          longDesc: "تعرف على أفضل عملائك وتجنب المرتجعات الوهمية من خلال تحليل شامل يعتمد على رقم الهاتف.",
-          detailedFeatures: ["حساب آلي لقيمة العميل LTV", "معدل المرتجعات لكل عميل", "لوحة تحكم إحصائية", "سجل الطلبات المتعددة"]
+          longDesc: "اربط متجرك بـ Google Sheets. كل طلب جديد يضاف تلقائياً لجدول البيانات الخاص بك لمتابعة دقيقة.",
+          detailedFeatures: ["تحديث ثنائي الاتجاه", "حقول قابلة للتخصيص", "سرعة فائقة", "نسخ احتياطي آلي"]
         },
         {
           id: "fast-checkout",
@@ -501,6 +512,17 @@ export const translations = {
           cta: "اكتشف المزيد",
           longDesc: "اقبل المدفوعات عبر بطاقة CIB والذهبية مباشرة في متجرك وبكل أمان.",
           detailedFeatures: ["معتمد من Satim", "توجيه آمن ومشفر", "تأكيد آلي للطلبات المدفوعة", "سجل كامل للعمليات"]
+        },
+        {
+          id: "marketing",
+          title: "Woo Marketing Suite",
+          tag: "نمو المبيعات",
+          desc: "الحل التسويقي الأمثل: شارات ديناميكية، توصيات ذكية، وتحسين قمع البيع.",
+          features: ["شارات ديناميكية", "توصيات ذكية (AI)", "Infinite Scroll"],
+          price: "18,000 DA / رخصة",
+          cta: "اكتشف المزيد",
+          longDesc: "حزمة أدوات قوية مصممة لرفع قيمة السلة الشرائية وتحويل الزوار إلى عملاء دائمين.",
+          detailedFeatures: ["خوارزمية توصيات متقدمة", "تصنيفات مرنة للبحث", "عدادات الاستعجال والمخزون", "تحليلات تسويقية معمقة"]
         }
       ]
     },

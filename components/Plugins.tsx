@@ -11,7 +11,9 @@ import {
     Zap, 
     RefreshCcw, 
     CreditCard,
-    ShoppingBag
+    ShoppingBag,
+    FileSpreadsheet,
+    Target
 } from 'lucide-react';
 
 interface PluginItem {
@@ -40,10 +42,11 @@ const PluginIcon = ({ id, size = 24 }: { id: string, size?: number }) => {
     switch (id) {
         case 'alv': return <Zap size={size} />;
         case 'logistics': return <Truck size={size} />;
-        case 'insights': return <BarChart3 size={size} />;
+        case 'sheet': return <FileSpreadsheet size={size} />;
         case 'fast-checkout': return <ShoppingBag size={size} />;
         case 'cart-recovery': return <RefreshCcw size={size} />;
         case 'satim': return <CreditCard size={size} />;
+        case 'marketing': return <Target size={size} />;
         default: return <Package size={size} />;
     }
 };
