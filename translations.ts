@@ -134,7 +134,7 @@ export const translations = {
           tag: "Growth",
           desc: "Solution marketing ultime : Badges, recommandations IA et optimisation du tunnel de vente.",
           features: ["Badges Dynamiques", "IA Recommendations", "Infinite Scroll"],
-          price: "18,000 DA / licence",
+          price: "10,000 DA / licence",
           cta: "En savoir plus",
           longDesc: "Une suite d'outils puissants conçus pour maximiser votre panier moyen et transformer vos visiteurs en clients fidèles.",
           detailedFeatures: ["Algorithme de recommandation", "Pills de catégories", "Badges de stock urgence", "Analytics Marketing avancés"]
@@ -332,7 +332,7 @@ export const translations = {
           tag: "Growth",
           desc: "Ultimate marketing solution: Badges, AI recommendations, and funnel optimization.",
           features: ["Dynamic Badges", "AI Recommendations", "Infinite Scroll"],
-          price: "18,000 DA / license",
+          price: "10,000 DA / license",
           cta: "Learn More",
           longDesc: "A suite of powerful tools designed to maximize your average order value and turn visitors into loyal customers.",
           detailedFeatures: ["Recommendation algorithm", "Category pills", "Urgency stock badges", "Advanced Marketing analytics"]
@@ -530,7 +530,7 @@ export const translations = {
           tag: "نمو المبيعات",
           desc: "الحل التسويقي الأمثل: شارات ديناميكية، توصيات ذكية، وتحسين قمع البيع.",
           features: ["شارات ديناميكية", "توصيات ذكية (AI)", "Infinite Scroll"],
-          price: "18,000 DA / رخصة",
+          price: "10,000 DA / رخصة",
           cta: "اكتشف المزيد",
           longDesc: "حزمة أدوات قوية مصممة لرفع قيمة السلة الشرائية وتحويل الزوار إلى عملاء دائمين.",
           detailedFeatures: ["خوارزمية توصيات متقدمة", "تصنيفات مرنة للبحث", "عدادات الاستعجال والمخزون", "تحليلات تسويقية معمقة"]
